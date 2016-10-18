@@ -145,8 +145,7 @@ class Map(object):
         """
         row, col = self._cell_index(x, y)
         try:
-            if row >= 0 and col >= 0:
-                self.grid[row, col] = val
+            self.grid[row, col] = val
         except IndexError:
             pass
 
@@ -156,12 +155,9 @@ class Map(object):
         x and y are in the map coordinate system
         """
         row, col = self._cell_index(x, y)
-        val = float('nan')
         try:
-            if row >= 0 and col >= 0:
-                val = self.grid[row, col]
+            return self.grid[row, col]
         except IndexError:
-            pass
-        return val
+            return float('nan')
 
 
