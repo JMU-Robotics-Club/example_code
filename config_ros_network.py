@@ -2,7 +2,7 @@
 """Script for modifying a user's .bashrc file so that a ROS-enabled
 robot can operate over a network.
 
-usage: robot_config_network.py [-h] [-w] [-r] [-c]
+usage: config_ros_network.py [-h] [-w] [-r] [-c]
 
 optional arguments:
   -h, --help  show this help message and exit
