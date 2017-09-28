@@ -8,8 +8,8 @@ Usage:
 
 action_nav.py TARGET_X TARGET_Y [THETA]
 
-Author: Nathan Sprague
-Version: 10/2015
+Author: Nathan Sprague & Zack Allen
+Version: 9/2017
 
 """
 import sys
@@ -99,10 +99,9 @@ if __name__ == "__main__":
     points.append((1,2,3))
     
     
-    
     for point in points:
         nav_node.goto_point(point[0],point[1],point[2])
         nav_node.ac.wait_for_result()
         rospy.sleep(2)
-        s1 = soundhandle.voiceSound(message)
+        s1 = soundhandle.voiceSound("Example")
         s1.play()
