@@ -9,7 +9,7 @@ roslaunch turtlebot_navigation gmapping_demo.launch
 open a new tab
 roslaunch turtlebot_rviz_launchers view_navigation.launch
 open a new tab
-rosrun sound_play sound_play_node.py
+rosrun sound_play soundplay_node.py
 open a new tab
 navigate to where you downloaded the script
 run command "python action_nav_2.py"
