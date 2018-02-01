@@ -1,0 +1,16 @@
+go to https://w3.cs.jmu.edu/spragunr/CS354_F16/labs/teleop/teleop.shtml
+Download the ros_config_account.sh script
+run it
+https://github.com/JMU-Robotics-Club/example_code/blob/master/action_nav_2.py
+Download 
+roslaunch turtlebot_bringup minimal.launch
+open a new tab
+roslaunch turtlebot_navigation gmapping_demo.launch
+open a new tab
+roslaunch turtlebot_rviz_launchers view_navigation.launch
+open a new tab
+rosrun sound_play sound_play_node.py
+open a new tab
+navigate to where you downloaded the script
+run command "python action_nav_2.py"
+rewrite script to make it better
