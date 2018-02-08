@@ -1,5 +1,4 @@
-go to https://w3.cs.jmu.edu/spragunr/CS354_F16/labs/teleop/teleop.shtml
-Download the ros_config_account.sh script
+From this repository, download the ros_config_account.sh script
 run it
 https://github.com/JMU-Robotics-Club/example_code/blob/master/action_nav_2.py
 Download 
