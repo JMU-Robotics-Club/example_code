@@ -14,3 +14,7 @@ open a new tab
 navigate to where you downloaded the script
 run command "python action_nav_2.py"
 rewrite script to make it better
+
+### For Keyboard Controls ###
+roslaunch turtlebot_teleop keyboard_teleop.launch
+#NOTE: Keyboard controls will not work concurrently with navigation goals. Close keyboard teleop before running action_nav script #
