@@ -4,7 +4,7 @@ Map classes that can generate and read OccupancyGrid messages.
 
 
 Author: Nathan Sprague
-Version: 3/22/13
+Version: 10/19/17
 """
 
 import rospy
@@ -15,8 +15,6 @@ import numpy as np
 
 class Map(object):
     """ The Map class represents an occupancy grid.
-
-    This is an abstract superclass.
 
     Public instance variables:
 
@@ -81,7 +79,6 @@ class Map(object):
         self.origin_y = map_message.info.origin.position.y
         self.grid = self._data_to_numpy(map_message.data)
 
-
     def _init_numpy_grid(self):
         """
         Initialize a default numpy array.
@@ -145,7 +142,8 @@ class Map(object):
         """
         row, col = self._cell_index(x, y)
         try:
-            self.grid[row, col] = val
+            if row >= 0 and col >= 0:
+                self.grid[row, col] = val
         except IndexError:
             pass
 
@@ -156,7 +154,10 @@ class Map(object):
         """
         row, col = self._cell_index(x, y)
         try:
-            return self.grid[row, col]
+            if row >= 0 and col >= 0:
+                return self.grid[row, col]
+            else:
+                return float('nan')
         except IndexError:
             return float('nan')
 
