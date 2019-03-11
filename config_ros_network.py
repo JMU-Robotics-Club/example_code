@@ -18,7 +18,7 @@ import os
 import argparse
 import sys
 
-JMU_IP_PREFIX = "134"
+JMU_IP_PREFIX = "172"
 
 def get_ip_address():
     """ Return the ip address of the local machine."""
